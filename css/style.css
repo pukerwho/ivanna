@@ -9838,14 +9838,14 @@ b {
     background-color: #692936;
     padding-left: 55px; }
     .main__welcome__content-title {
-      max-width: 650px;
+      max-width: 600px;
       color: #ffffff;
       font-family: 'Roboto-Black';
       font-size: 44px;
       text-transform: uppercase;
       margin-bottom: 30px; }
     .main__welcome__content-description {
-      max-width: 650px;
+      max-width: 600px;
       color: #ffffff;
       font-family: 'Roboto-Light';
       font-size: 18px;
