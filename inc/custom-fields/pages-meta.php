@@ -35,6 +35,14 @@ function crb_page_theme_options() {
       Field::make( 'rich_text', 'crb_about_holidays', 'FOR HOLIDAYS' ),
       Field::make( 'rich_text', 'crb_about_operate', 'HOW WE OPERATE' ),
     ) );
+  Container::make( 'post_meta', 'More' )
+    ->where( 'post_type', '=', 'page' )
+    ->where( 'post_template', '=', 'tpl_contact.php' )
+    ->add_fields( array(
+      Field::make( 'textarea', 'crb_contact_address', 'Адрес' ),
+      Field::make( 'textarea', 'crb_contact_map', 'Карта (iframe)' ),
+      Field::make( 'text', 'crb_contact_form', 'Шорткод для формы' ),
+    ) );
 }
 
 ?>

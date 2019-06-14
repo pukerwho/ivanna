@@ -10496,6 +10496,89 @@ b {
         right: -15px;
         top: 0; }
 
+.p_contact {
+  background-color: #f7f7f7;
+  padding-top: 120px; }
+  .p_contact__title {
+    color: #1c2e3d;
+    font-family: 'Roboto-Regular';
+    font-size: 48px;
+    margin-bottom: 25px; }
+  .p_contact__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px; }
+    .p_contact__item-icon {
+      -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+      margin-right: 25px; }
+    .p_contact__item-info {
+      color: #1c2e3d;
+      font-family: 'Roboto-Light';
+      font-size: 18px;
+      line-height: 1.67; }
+  .p_contact__form {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.17);
+    padding: 25px 50px; }
+    .p_contact__form-title {
+      color: #1c2e3d;
+      font-family: 'Roboto-Medium';
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 10px; }
+    .p_contact__form input {
+      width: 100%;
+      color: #878c91;
+      font-family: 'Roboto-Light';
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid #878c91;
+      padding: 15px;
+      margin-bottom: 7px; }
+    .p_contact__form textarea {
+      width: 100%;
+      color: #878c91;
+      font-family: 'Roboto-Light';
+      font-size: 16px;
+      border: solid 1px #878c91;
+      padding: 15px;
+      margin-top: 13px;
+      margin-bottom: 13px; }
+    .p_contact__form [type="submit"] {
+      width: 100%;
+      color: #ffffff;
+      font-family: 'Roboto-Medium';
+      font-size: 15px;
+      background-color: #692936;
+      text-align: center;
+      text-transform: uppercase; }
+    .p_contact__form p {
+      margin-bottom: 0; }
+    .p_contact__form .div.wpcf7 .ajax-loader {
+      position: absolute;
+      bottom: 50px;
+      right: 30px; }
+  .p_contact__map {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    margin-top: -100px; }
+    .p_contact__map iframe {
+      width: 100%;
+      height: 1040px;
+      overflow: hidden;
+      margin-top: -150px; }
+
 .animate-puk-mask {
   overflow: hidden; }
 
