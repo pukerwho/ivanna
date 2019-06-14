@@ -50,6 +50,10 @@ function crb_page_theme_options() {
       ) ),
       Field::make( 'textarea', 'crb_contact_map', 'Карта (iframe)' ),
       Field::make( 'text', 'crb_contact_form', 'Шорткод для формы' ),
+      Field::make( 'text', 'crb_contact_facebook', 'Ссылка на Facebook' ),
+      Field::make( 'text', 'crb_contact_instagram', 'Ссылка на Instagram' ),
+      Field::make( 'text', 'crb_contact_twitter', 'Ссылка на Twitter' ),
+      Field::make( 'text', 'crb_contact_youtube', 'Ссылка на Ютуб' ),
     ) );
 }
 

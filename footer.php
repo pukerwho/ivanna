@@ -4,23 +4,47 @@
   		<div class="row">
   			<div class="col-md-12">
   				<div class="footer__content">
+            <?php 
+            $args_contact_page = [
+                'post_type' => 'page',
+                'fields' => 'ids',
+                'nopaging' => true,
+                'meta_key' => '_wp_page_template',
+                'meta_value' => 'tpl_contact.php'
+            ];
+            $contact_pages = get_posts( $args_contact_page );
+            foreach ( $contact_pages as $contact_page ): ?>
     				<div class="footer__icons">
+              <?php if(carbon_get_post_meta($contact_page, 'crb_contact_facebook')): ?>
     					<div class="footer__icon">
-    						<a href="#">
+    						<a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_facebook') ?>" target="_blank">
     							<img src="<?php bloginfo('template_url') ?>/img/facebook.svg" alt="">
     						</a>
     					</div>
+              <?php endif ?>
+              <?php if(carbon_get_post_meta($contact_page, 'crb_contact_instagram')): ?>
     					<div class="footer__icon">
-    						<a href="#">
+    						<a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_instagram') ?>" target="_blank">
     							<img src="<?php bloginfo('template_url') ?>/img/instagram.svg" alt="">
     						</a>
     					</div>
+              <?php endif ?>
+              <?php if(carbon_get_post_meta($contact_page, 'crb_contact_twitter')): ?>
     					<div class="footer__icon">
-    						<a href="#">
+    						<a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_twitter') ?>" target="_blank">
     							<img src="<?php bloginfo('template_url') ?>/img/twitter.svg" alt="">
     						</a>
     					</div>
+              <?php endif ?>
+              <?php if(carbon_get_post_meta($contact_page, 'crb_contact_youtube')): ?>
+              <div class="footer__icon">
+                <a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_youtube') ?>" target="_blank">
+                  <img src="<?php bloginfo('template_url') ?>/img/youtube.svg" alt="">
+                </a>
+              </div>
+              <?php endif ?>
     				</div>
+            <?php endforeach; ?>
     				<?php wp_nav_menu([
               'theme_location' => 'head_menu',
               'container' => 'nav',
