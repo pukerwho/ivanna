@@ -39,14 +39,16 @@
 						) );
 						if ($custom_query_videos->have_posts()) : while ($custom_query_videos->have_posts()) : $custom_query_videos->the_post(); ?>
 						<div class="swiper-slide">
-							<div class="videos__swiper-img" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');background-size: cover; background-position: center;">
-								<div class="videos__swiper-play"></div>
-							</div>
+							<a href="<?php echo carbon_get_the_post_meta('crb_videos_link') ?>" target="_blank">
+								<div class="videos__swiper-img" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');background-size: cover; background-position: center;">
+									<div class="videos__swiper-play"></div>
+								</div>
+							</a>
 							<div class="videos__swiper-info">
 								<div class="videos__swiper-title">
 									<?php echo carbon_get_the_post_meta('crb_videos_name') ?>
 								</div>
-								<a href="#">
+								<a href="<?php echo carbon_get_the_post_meta('crb_videos_link') ?>" target="_blank">
 									<div class="videos__swiper-more">
 										Watch video
 									</div>
