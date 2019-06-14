@@ -24,6 +24,16 @@ $(window).scroll(function(){
   }
 })
 
+//Плавный скролл
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+  var target = $($.attr(this, 'href'));
+  var targetScroll =  target.offset().top - 90
+  $('html, body').animate({
+      scrollTop: targetScroll
+  }, 500);
+});
+
 //MAIN HERO
 var swiperMainServices = function() {
   if ($(document).width() > 760) {

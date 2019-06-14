@@ -11,9 +11,11 @@
 			<div class="theme-button">
 				Send a request
 			</div>
-			<div class="main__welcome__content-more">
-				Learn more
-			</div>
+			<a href="#main_services">
+				<div class="main__welcome__content-more">
+					Learn more
+				</div>
+			</a>
 		</div>
 	</div>
 </div>

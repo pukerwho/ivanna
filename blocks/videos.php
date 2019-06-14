@@ -42,6 +42,7 @@
 							<a href="<?php echo carbon_get_the_post_meta('crb_videos_link') ?>" target="_blank">
 								<div class="videos__swiper-img" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');background-size: cover; background-position: center;">
 									<div class="videos__swiper-play"></div>
+									<div class="videos__swiper-absolute"></div>
 								</div>
 							</a>
 							<div class="videos__swiper-info">
