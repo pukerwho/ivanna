@@ -11118,7 +11118,6 @@ b {
       -ms-flex-direction: column;
       flex-direction: column; }
       .mobile-cover .menu li {
-        padding: 7px 0;
         margin-right: 0; }
       .mobile-cover .menu .sub-menu {
         z-index: 9; }
@@ -11136,7 +11135,7 @@ b {
       width: 100%;
       min-height: 50vh;
       height: auto;
-      padding-left: 0; }
+      padding: 50px 0; }
       .main__welcome__content-title {
         font-size: 30px;
         margin-bottom: 20px; }
