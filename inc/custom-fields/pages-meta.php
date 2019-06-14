@@ -31,9 +31,9 @@ function crb_page_theme_options() {
     ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_about.php' )
     ->add_fields( array(
-      Field::make( 'textarea', 'crb_about_business', 'FOR BUSINESS' ),
-      Field::make( 'textarea', 'crb_about_holidays', 'FOR HOLIDAYS' ),
-      Field::make( 'textarea', 'crb_about_operate', 'HOW WE OPERATE' ),
+      Field::make( 'rich_text', 'crb_about_business', 'FOR BUSINESS' ),
+      Field::make( 'rich_text', 'crb_about_holidays', 'FOR HOLIDAYS' ),
+      Field::make( 'rich_text', 'crb_about_operate', 'HOW WE OPERATE' ),
     ) );
 }
 
