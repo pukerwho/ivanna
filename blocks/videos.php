@@ -17,7 +17,7 @@
 						<span><?php echo carbon_get_the_post_meta('crb_videos_name') ?>, </span>
 						<span><?php echo carbon_get_the_post_meta('crb_videos_company') ?>, </span>
 					</div>
-					<a href="#">
+					<a href="<?php echo carbon_get_the_post_meta('crb_videos_link') ?>" target="_blank">
 						<div class="videos__block-play">
 							<div class="videos__block-play__inner"></div>
 						</div>

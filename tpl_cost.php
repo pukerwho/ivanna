@@ -40,7 +40,7 @@ Template Name: Сost of translation
 								<div class="cost__item-price">
 									$500 per hour
 								</div>
-								<div>
+								<div class="cost__item-order">
 									order
 								</div>
 							</div>

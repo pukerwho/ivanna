@@ -34,9 +34,11 @@
 							<div class="whyus__item-description">
 								<?php echo $whyus_item['crb_main_whyus_item_description'] ?>
 							</div>
-							<div class="whyus__item-more">
-								Learn More
-							</div>
+							<a href="#">
+								<div class="whyus__item-more">
+									Learn More
+								</div>
+							</a>
 						</div>
 					<?php endforeach; ?>
 				</div>
