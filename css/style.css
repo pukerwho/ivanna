@@ -10437,6 +10437,8 @@ b {
       border: 1px solid transparent;
       padding: 15px 50px;
       margin-left: 7px; }
+    .b_promo__form div.wpcf7-response-output {
+      color: #ffffff !important; }
   .b_promo__absolute {
     width: 100%;
     height: 100%;
