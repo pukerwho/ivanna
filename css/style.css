@@ -10564,7 +10564,7 @@ b {
       text-transform: uppercase; }
     .p_contact__form p {
       margin-bottom: 0; }
-    .p_contact__form .div.wpcf7 .ajax-loader {
+    .p_contact__form .ajax-loader {
       position: absolute;
       bottom: 50px;
       right: 30px; }
