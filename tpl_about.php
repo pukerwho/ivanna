@@ -24,7 +24,7 @@ Template Name: About us
 							<div class="p_single__description">
 								<?php the_content(); ?>
 							</div>
-							<div class="p_single__button">
+							<div class="p_single__button callback">
 								Send a request
 							</div>
 						</div>

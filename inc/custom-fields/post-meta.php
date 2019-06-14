@@ -16,6 +16,7 @@ function crb_post_theme_options() {
     ->where( 'post_type', '=', 'services' )
     ->add_fields( array(
       Field::make( 'rich_text', 'crb_services_text', 'Основной текст' ),
+      Field::make( 'text', 'crb_services_price', 'Стоимость' ),
   ) );
 }
 

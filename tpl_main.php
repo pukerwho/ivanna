@@ -26,7 +26,7 @@ Template Name: ГЛАВНАЯ
 							<div class="b_request__text animate-puk" data-effect="fade" data-delay="0.7s">
 								<b>Professional English speaking</b> drivers, wide range of cars are available 7 days a week. Order a car: one click request and easy payment upon arrival or upfront.
 							</div>
-							<div class="b_request__send animate-puk" data-effect="fade" data-delay="0.8s">
+							<div class="b_request__send animate-puk callback" data-effect="fade" data-delay="0.8s">
 								Send a request
 							</div>
 						</div>

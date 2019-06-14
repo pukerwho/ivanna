@@ -40,11 +40,13 @@ Template Name: Сost of translation
 							</div>
 							<div class="cost__item-buttons">
 								<div class="cost__item-price">
-									$500 per hour
+									<?php echo carbon_get_the_post_meta('crb_services_price') ?>
 								</div>
-								<div class="cost__item-order">
-									order
-								</div>
+								<a href="<?php echo get_permalink(); ?>">
+									<div class="cost__item-order">
+										order
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>

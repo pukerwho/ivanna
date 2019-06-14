@@ -19,7 +19,6 @@
 		<div class="row justify-content-center">
 			<div class="col-md-9">
 				<div class="whyus__grid">
-
 					<?php 
 					$whyus_grid = carbon_get_the_post_meta('crb_main_whyus_grid');
 					foreach( $whyus_grid as $whyus_item ): ?>

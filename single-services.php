@@ -34,7 +34,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="p_single__button">
+					<div class="p_single__button callback">
 						Send a request
 					</div>
 				</div>

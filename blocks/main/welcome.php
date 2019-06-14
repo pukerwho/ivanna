@@ -8,7 +8,7 @@
 			<?php echo carbon_get_the_post_meta('crb_main_description') ?>
 		</div>
 		<div class="main__welcome__content-buttons">
-			<div class="theme-button">
+			<div class="theme-button callback">
 				Send a request
 			</div>
 			<a href="#main_services">
