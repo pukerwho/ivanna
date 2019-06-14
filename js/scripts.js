@@ -2,6 +2,15 @@ if (!$('body').hasClass('page-template-tpl_main')) {
   $('header').css({'background-color': '#692936'});
 }
 
+jQuery(document).ready(function($){
+  $('.p_single__photo img').addClass('show');
+  $('.p_single__photo-absolute').addClass('show');
+  $('.p_single__title').addClass('show');
+  $('.p_single__description').addClass('show');
+  $('.p_single__button').addClass('show');
+  $('.p_single__info').addClass('show');
+})
+
 $('.toogle-menu').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('toogle-menu_active');
