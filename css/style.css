@@ -9757,7 +9757,8 @@ b {
       .header__menu .sub-menu a {
         color: #692936; }
     .header__menu .menu-item-has-children {
-      position: relative; }
+      position: relative;
+      margin: 40px; }
       .header__menu .menu-item-has-children:after {
         content: url(../img/sort-down.svg);
         width: 8px;
