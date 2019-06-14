@@ -12,6 +12,11 @@ function crb_post_theme_options() {
       Field::make( 'text', 'crb_videos_company', 'Имя компании' ),
       Field::make( 'text', 'crb_videos_link', 'Ссылка на видео' ),
   ) );
+  Container::make( 'post_meta', 'More' )
+    ->where( 'post_type', '=', 'services' )
+    ->add_fields( array(
+      Field::make( 'rich_text', 'crb_services_text', 'Основной текст' ),
+  ) );
 }
 
 ?>

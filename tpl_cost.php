@@ -30,9 +30,11 @@ Template Name: Сost of translation
 							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 						</div>
 						<div class="cost__item-info">
-							<div class="cost__item-title">
-								<?php the_title(); ?>
-							</div>
+							<a href="<?php echo get_permalink(); ?>">
+								<div class="cost__item-title">
+									<?php the_title(); ?>
+								</div>
+							</a>
 							<div class="cost__item-text">
 								<?php the_content(); ?>
 							</div>

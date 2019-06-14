@@ -10439,6 +10439,41 @@ b {
         right: -15px;
         top: 0; }
 
+.service {
+  padding: 190px 0 0 0; }
+  .service__top {
+    margin-bottom: 60px; }
+  .service__photo {
+    height: 355px; }
+    .service__photo img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .service__title {
+    color: #1c2e3d;
+    font-family: 'Roboto-Regular';
+    font-size: 48px;
+    margin-bottom: 30px; }
+  .service__description {
+    color: #878c91;
+    font-family: 'Roboto-Light';
+    font-size: 18px;
+    line-height: 1.5; }
+  .service__info {
+    color: #878c91;
+    font-family: 'Roboto-Light';
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    padding: 50px 0 40px 0; }
+    .service__info h2 {
+      color: #1c2e3d;
+      font-family: 'Roboto-Bold';
+      font-size: 22px;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+
 .animate-puk-mask {
   overflow: hidden; }
 
