@@ -27,6 +27,14 @@ function crb_page_theme_options() {
       Field::make( 'text', 'crb_promo_description', 'Описание для Акции' ),
       Field::make( 'text', 'crb_promo_form', 'Шорткод для формы' ),
     ) );
+  Container::make( 'post_meta', 'More' )
+    ->where( 'post_type', '=', 'page' )
+    ->where( 'post_template', '=', 'tpl_about.php' )
+    ->add_fields( array(
+      Field::make( 'textarea', 'crb_about_business', 'FOR BUSINESS' ),
+      Field::make( 'textarea', 'crb_about_holidays', 'FOR HOLIDAYS' ),
+      Field::make( 'textarea', 'crb_about_operate', 'HOW WE OPERATE' ),
+    ) );
 }
 
 ?>
