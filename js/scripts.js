@@ -9,6 +9,10 @@ jQuery(document).ready(function($){
   $('.p_single__description').addClass('show');
   $('.p_single__button').addClass('show');
   $('.p_single__info').addClass('show');
+
+  $('.main__welcome__content-title').addClass('show');
+  $('.main__welcome__content-description').addClass('show');
+  $('.main__welcome__content-buttons').addClass('show');
 })
 
 $('.toogle-menu').on('click', function(e) {
