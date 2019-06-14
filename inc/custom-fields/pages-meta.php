@@ -40,6 +40,14 @@ function crb_page_theme_options() {
     ->where( 'post_template', '=', 'tpl_contact.php' )
     ->add_fields( array(
       Field::make( 'textarea', 'crb_contact_address', 'Адрес' ),
+      Field::make( 'complex', 'crb_contact_phones', 'Телефоны' )
+        ->add_fields( array(
+          Field::make( 'text', 'crb_contact_phone', 'Номер' ),
+      ) ),
+      Field::make( 'complex', 'crb_contact_emails', 'Email' )
+        ->add_fields( array(
+          Field::make( 'text', 'crb_contact_email', 'Почтовый ящик' ),
+      ) ),
       Field::make( 'textarea', 'crb_contact_map', 'Карта (iframe)' ),
       Field::make( 'text', 'crb_contact_form', 'Шорткод для формы' ),
     ) );

@@ -10524,6 +10524,8 @@ b {
       font-family: 'Roboto-Light';
       font-size: 18px;
       line-height: 1.67; }
+      .p_contact__item-info a {
+        color: #1c2e3d; }
   .p_contact__form {
     background-color: #ffffff;
     -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.17);

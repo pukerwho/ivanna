@@ -27,7 +27,14 @@ Template Name: Contact
 								<img src="<?php bloginfo('template_url') ?>/img/call.svg" alt="">
 							</div>
 							<div class="p_contact__item-info">
-								<?php echo carbon_get_the_post_meta('crb_contact_address') ?>
+								<?php 
+									$contact_phones = carbon_get_the_post_meta('crb_contact_phones');
+									foreach( $contact_phones as $contact_phone ):
+								?>
+									<div>
+										<a href="tel:<?php echo $contact_phone['crb_contact_phone'] ?>"><?php echo $contact_phone['crb_contact_phone'] ?>;</a>
+									</div>
+								<?php endforeach; ?>
 							</div>
 						</div>
 						<div class="p_contact__item">
@@ -35,7 +42,14 @@ Template Name: Contact
 								<img src="<?php bloginfo('template_url') ?>/img/mail.svg" alt="">
 							</div>
 							<div class="p_contact__item-info">
-								<?php echo carbon_get_the_post_meta('crb_contact_address') ?>
+								<?php 
+									$contact_phones = carbon_get_the_post_meta('crb_contact_emails');
+									foreach( $contact_phones as $contact_phone ):
+								?>
+									<div>
+										<a href="mailto:<?php echo $contact_phone['crb_contact_email'] ?>"><?php echo $contact_phone['crb_contact_email'] ?>;</a>
+									</div>
+								<?php endforeach; ?>
 							</div>
 						</div>
 					</div>
