@@ -9,7 +9,7 @@ $args_main_page = [
 $main_pages = get_posts( $args_main_page );
 foreach ( $main_pages as $main_page ): ?>
 
-	<div class="b_promo" style="background-image: url('<?php echo carbon_get_the_post_meta('crb_promo_img') ?>');background-size: cover; background-position: center;">
+	<div class="b_promo" style="background-image: url('<?php echo carbon_get_post_meta($main_page, 'crb_promo_img') ?>');background-size: cover; background-position: center;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-7">
