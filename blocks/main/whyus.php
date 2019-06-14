@@ -19,6 +19,7 @@
 		<div class="row justify-content-center">
 			<div class="col-md-9">
 				<div class="whyus__grid">
+
 					<?php 
 					$whyus_grid = carbon_get_the_post_meta('crb_main_whyus_grid');
 					foreach( $whyus_grid as $whyus_item ): ?>
@@ -28,10 +29,10 @@
 								<img src="<?php bloginfo('template_url') ?>/img/paper.svg" alt="">
 							</div>
 							<div class="whyus__item-title">
-								6 Years experience
+								<?php echo $whyus_item['crb_main_whyus_item_title'] ?>
 							</div>
 							<div class="whyus__item-description">
-								Expanding the horizons of business cooperation.
+								<?php echo $whyus_item['crb_main_whyus_item_description'] ?>
 							</div>
 							<div class="whyus__item-more">
 								Learn More
