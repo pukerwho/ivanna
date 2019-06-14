@@ -10235,6 +10235,82 @@ b {
       -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
 
+.cost {
+  padding: 80px 0 0 0; }
+  .cost__title {
+    color: #1c2e3d;
+    font-family: 'Roboto-Bold';
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .cost__description {
+    color: #1c2e3d;
+    font-family: 'Roboto-Light';
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px; }
+  .cost__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 70px; }
+    .cost__item-img {
+      width: 160px;
+      height: 160px;
+      -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+      margin-right: 20px; }
+      .cost__item-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
+    .cost__item-info {
+      -webkit-flex-basis: 70%;
+      -ms-flex-preferred-size: 70%;
+      flex-basis: 70%; }
+    .cost__item-title {
+      color: #770217;
+      font-family: 'Roboto-Bold';
+      font-size: 24px;
+      line-height: 1.46;
+      margin-bottom: 10px; }
+    .cost__item-text {
+      color: #1c2e3d;
+      font-family: 'Roboto-Light';
+      font-size: 14px;
+      line-height: 1.79;
+      margin-bottom: 20px; }
+    .cost__item-buttons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #ed0a37;
+      font-family: Roboto-Medium;
+      font-size: 14px;
+      text-transform: uppercase; }
+    .cost__item-price {
+      color: #ffffff;
+      font-family: 'Roboto-Regular';
+      font-size: 16px;
+      text-transform: uppercase;
+      line-height: 2.19;
+      letter-spacing: 0.5px;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      background-color: #692936;
+      margin-right: 20px;
+      padding: 2px 30px; }
+
 .animate-puk-mask {
   overflow: hidden; }
 

@@ -27,7 +27,7 @@
         <div class="col-md-12">
           <div class="header__content">
             <div class="header__logo">
-              <a href="#">
+              <a href="<?php echo home_url(); ?>">
                 Ivanna Morozova
               </a>
             </div>

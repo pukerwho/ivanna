@@ -26,7 +26,7 @@
 						<?php $i++; $i=$i/1.5 ?>
 						<div class="whyus__item animate-puk" data-effect="fade" data-delay="<?php echo $i ?>s">
 							<div class="whyus__item-circle">
-								<img src="<?php bloginfo('template_url') ?>/img/paper.svg" alt="">
+								<img src="<?php echo $whyus_item['crb_main_whyus_item_icon'] ?>" alt="">
 							</div>
 							<div class="whyus__item-title">
 								<?php echo $whyus_item['crb_main_whyus_item_title'] ?>

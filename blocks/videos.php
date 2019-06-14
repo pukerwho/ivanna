@@ -28,7 +28,6 @@
 		<div class="videos__block-absolute"></div>
 	</div>
 	<?php endwhile; endif; wp_reset_postdata(); ?>
-
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
