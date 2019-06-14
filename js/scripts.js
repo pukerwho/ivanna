@@ -15,11 +15,11 @@ jQuery(document).ready(function($){
   $('.main__welcome__content-buttons').addClass('show');
 })
 
-$('.toogle-menu').on('click', function(e) {
+$('.mobile-menu').on('click', function(e) {
   e.preventDefault;
-  $(this).toggleClass('toogle-menu_active');
-  $('.slide-menu').toggleClass('slide-menu_active');
-  $('.menu li').toggleClass('animate-left');
+  $(this).toggleClass('mobile-menu__active');
+  $('.mobile-cover').toggleClass('mobile-cover__open');
+  $('body').toggleClass('modal-open');
 });
 
 $(window).scroll(function(){
@@ -33,7 +33,6 @@ $(window).scroll(function(){
     } else {
       $('header').css({'background-color': 'transparent'});
     }
-    
   }
 })
 
@@ -83,6 +82,22 @@ var swiperMainServices = function() {
         prevEl: '.swiper-services-button-prev',
       },
     })
+  } else {
+    var swiperServices = new Swiper('.swiper-services', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-services-button-next',
+        prevEl: '.swiper-services-button-prev',
+      },
+    })
   }
 }
 
@@ -93,6 +108,18 @@ var swiperMainVideos = function() {
     var swiperVideos = new Swiper('.main_videos_swiper', {
       slidesPerView: 4,
       spaceBetween: 90,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    })
+  } else {
+    var swiperVideos = new Swiper('.main_videos_swiper', {
+      slidesPerView: 2,
+      spaceBetween: 45,
       loop: true,
       autoplay: {
         delay: 5000,

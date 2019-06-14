@@ -41,9 +41,26 @@
                 <img src="<?php bloginfo('template_url') ?>/img/phone.svg" alt=""> +38 (099) 124 40 00
               </div>
             </div>
+            <div class="mobile-show">
+              <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+  <div class="mobile-show">
+    <div class="mobile-cover">
+      <?php wp_nav_menu([
+        'theme_location' => 'head_menu',
+        'container' => 'nav',
+        'container_class' => 'header__menu',
+        'menu_id' => 'head_menu',
+      ]); ?>  
+    </div>
+  </div>
   <section id="content" role="main">
