@@ -33,7 +33,7 @@
 							<div class="whyus__item-description">
 								<?php echo $whyus_item['crb_main_whyus_item_description'] ?>
 							</div>
-							<a href="#">
+							<a href="<?php echo get_page_url('tpl_about') ?>">
 								<div class="whyus__item-more">
 									Learn More
 								</div>
