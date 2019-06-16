@@ -9553,6 +9553,10 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px; }
 
+body {
+  font-family: 'Roboto-Light';
+  font-display: fallback; }
+
 ul {
   margin: 0;
   padding: 0; }
@@ -9578,6 +9582,9 @@ b {
 
 .pointer {
   cursor: pointer; }
+
+.custom-object-fit img {
+  opacity: 0 !important; }
 
 .theme-button {
   display: inline-block;
@@ -9692,32 +9699,50 @@ b {
 
 @font-face {
   font-family: 'Roboto-Black';
-  src: url("../fonts/Roboto-Black.ttf") format("truetype");
+  src: local("Roboto-Black");
+  src: url("../fonts/Roboto-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.otf") format("opentype"), url("../fonts/Roboto-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  src: local("Roboto-Bold");
+  src: url("../fonts/Roboto-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: 'Roboto-Medium';
-  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  src: local("Roboto-Medium");
+  src: url("../fonts/Roboto-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.otf") format("opentype"), url("../fonts/Roboto-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  src: local("Roboto-Regular");
+  src: url("../fonts/Roboto-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.otf") format("opentype"), url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: 'Roboto-Light';
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  src: local(Roboto-Light);
+  src: url("../fonts/Roboto-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.otf") format("opentype"), url("../fonts/Roboto-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: 'ChampionScript-Bold';
-  src: url("../fonts/ChampionScript-Bold.ttf") format("truetype");
+  src: local("Roboto-Regular");
+  src: url("../fonts/ChampionScript-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/ChampionScript-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampionScript-Bold.woff") format("woff"), url("../fonts/ChampionScript-Bold.woff2") format("woff2"), url("../fonts/ChampionScript-Bold.otf") format("opentype"), url("../fonts/ChampionScript-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 .header {
@@ -10661,15 +10686,13 @@ b {
     display: flex;
     margin-bottom: 70px; }
     .cost__item-img {
-      width: 160px;
-      height: 160px;
       -webkit-flex-basis: 30%;
       -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
       margin-right: 20px; }
       .cost__item-img img {
-        width: 100%;
-        height: 100%;
+        width: 160px;
+        height: 160px;
         -o-object-fit: cover;
         object-fit: cover;
         -webkit-border-radius: 50%;
@@ -11145,8 +11168,11 @@ b {
         font-size: 16px;
         margin-bottom: 40px; }
       .main__welcome__content .theme-button {
-        margin-right: 35px;
-        padding: 15px 40px; }
+        font-size: 16px;
+        margin-right: 20px;
+        padding: 15px 30px; }
+      .main__welcome__content-more {
+        font-size: 16px; }
 
   .whyus__grid {
     -webkit-box-orient: vertical;
@@ -11193,11 +11219,12 @@ b {
     margin-bottom: 40px; }
 
   .cost__item-img {
-    width: 90px;
-    height: 90px;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%; }
+    .cost__item-img img {
+      width: 90px;
+      height: 90px; }
   .cost__item-price {
     padding: 2px 20px; }
 

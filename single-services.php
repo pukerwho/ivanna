@@ -7,7 +7,7 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-md-6">
-					<div class="p_single__photo">
+					<div class="p_single__photo object-fit">
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 						<div class="p_single__photo-absolute"></div>
 					</div>

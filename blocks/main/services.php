@@ -29,7 +29,7 @@
 						if ($custom_query_services->have_posts()) : while ($custom_query_services->have_posts()) : $custom_query_services->the_post(); ?>
 							<?php $i++; $i=$i/1.5 ?>
 							<div class="swiper-slide main__services__item">
-								<div class="main__services__item-img animate-puk" data-effect="fade" data-delay="0.9s">
+								<div class="main__services__item-img animate-puk object-fit" data-effect="fade" data-delay="0.9s">
 									<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 								</div>
 								<div class="main__services__item-title animate-puk" data-effect="fade" data-delay="1s">

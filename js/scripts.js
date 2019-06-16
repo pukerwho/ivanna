@@ -1,3 +1,18 @@
+var userAgent, ieReg, ie;
+userAgent = window.navigator.userAgent;
+ieReg = /msie|Trident.*rv[ :]*11\./gi;
+ie = ieReg.test(userAgent);
+
+if(ie) {
+  $(".object-fit").each(function () {
+    var $container = $(this),
+        imgUrl = $container.find("img").prop("src");
+    if (imgUrl) {
+      $container.css({"background-image":'url(' + imgUrl + ')', "background-size":"cover", "background-position": "center top"}).addClass("custom-object-fit");
+    }
+  });
+}
+
 if (!$('body').hasClass('page-template-tpl_main')) {
   $('header').css({'background-color': '#692936'});
 }

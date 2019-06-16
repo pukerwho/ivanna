@@ -28,7 +28,7 @@
           <div class="header__content">
             <div class="header__logo">
               <a href="<?php echo home_url(); ?>">
-                Ivanna Morozova
+                Ivanna Моrозоvа
               </a>
             </div>
             <div class="header__menu">
@@ -38,7 +38,23 @@
                 'menu_id' => 'head_menu',
               ]); ?>
               <div class="header__phone">
-                <img src="<?php bloginfo('template_url') ?>/img/phone.svg" alt=""> +38 (099) 124 40 00
+                <img src="<?php bloginfo('template_url') ?>/img/phone.svg" alt="">
+                <?php 
+                $args_contact_page = [
+                    'post_type' => 'page',
+                    'fields' => 'ids',
+                    'nopaging' => true,
+                    'meta_key' => '_wp_page_template',
+                    'meta_value' => 'tpl_contact.php'
+                ];
+                $contact_pages = get_posts( $args_contact_page );
+                foreach ( $contact_pages as $contact_page ): ?>
+                  <?php
+                  $contact_phones = carbon_get_post_meta($contact_page, 'crb_contact_phones' );
+                  foreach ( array_slice($contact_phones, 0, 1)  as $contact_phone ): ?>
+                    <?php echo $contact_phone['crb_contact_phone'] ?>
+                  <?php endforeach; ?>
+                <?php endforeach; ?>
               </div>
             </div>
             <div class="mobile-show">

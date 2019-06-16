@@ -26,7 +26,7 @@ Template Name: Сost of translation
 			if ($custom_query_services->have_posts()) : while ($custom_query_services->have_posts()) : $custom_query_services->the_post(); ?>
 				<div class="col-md-6">
 					<div class="cost__item">
-						<div class="cost__item-img">
+						<div class="cost__item-img object-fit">
 							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 						</div>
 						<div class="cost__item-info">
